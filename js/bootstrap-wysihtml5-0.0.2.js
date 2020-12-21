@@ -112,6 +112,7 @@
 
     var Wysihtml5 = function(el, options) {
         this.el = el;
+        debugger;
         var toolbarOpts = options || defaultOptions;
         for(var t in toolbarOpts.customTemplates) {
           tpl[t] = toolbarOpts.customTemplates[t];
@@ -221,6 +222,7 @@
             var initialValue = urlInput.val();
 
             var insertImage = function() {
+                debugger;
                 var url = urlInput.val();
                 urlInput.val(initialValue);
                 self.editor.currentView.element.focus();
